@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@mixin mq($breakpoint: 768px, $rule: max, $subtraction: false) {
+    @if $rule == max and $subtraction {
+        $breakpoint: $breakpoint - 0.0625;
+    }
+    @media screen and (#{$rule}-width: $breakpoint) {
+        @content;
+    }
+}
+
+html {
+    font-size: min(10px, 2.42vw);
+}
+body {
+    // font-family: $font-yugo;
+    // font-size: 1.8rem;
+    // line-height: 1.75;	
+    // letter-spacing: 0.075em;
+    // overflow-x: hidden;
+}
+img,
+embed,
+object,
+iframe {
+    display: block;
+    max-width: 100%;
+}
+a{
+    transition: all 0.2s;
+    &:hover{
+        opacity: 0.85;
+    }
+}
+
+@media (min-width: 769px) {
+    .sp {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .pc {
+        display: none !important;
+    }
+}
