@@ -101,7 +101,7 @@
 
     .sec-service-main {
         margin-top: -12rem;
-
+        position: relative;
         .container {
             .content {
                 text-align: center;
@@ -150,7 +150,7 @@
                         margin-top: -1.5rem;
                         padding-bottom: .5rem;
                         img{
-                            max-width: .7rem;
+                            max-width: .4rem;
                             width: 100%;
                         }
                     }
@@ -442,7 +442,7 @@
                     max-width: 85rem;
                     width: 100%;
                     margin: auto;
-                    padding: 6rem 1.2rem;
+                    padding: 6rem;
                 }
 
                 .content-head {
@@ -1095,7 +1095,7 @@
                         max-width: 30rem;
                         padding: 1.4rem 0;
                         img{
-                            max-width: .8rem;
+                            max-width: .6rem;
                             right: 2rem;
                         }
                     }
@@ -1136,6 +1136,10 @@
     .main .sec-ayumi-main .container .content .bg-top{
         max-width: 55rem;
         width: 100%;
+    }
+ 
+    .main .sec-pre-main .container .content .content-head .wrap .bg{
+        padding: 0 4rem;
     }
     // .main .sec-flow-main .container .content .list{}
 }
@@ -1223,7 +1227,7 @@
         text-align: left;
     }
     .main .sec-voice-main .container .content .details a img{
-        max-width: 1.2rem;
+        max-width: 1rem;
     }
     .main .sec-voice-main .container .content .voice-slider {
         max-width: 46rem;

@@ -51,6 +51,9 @@ body {
     color: #252525;
     // letter-spacing: 0.075em;
     // overflow-x: hidden;
+    &.ayumi-eye{
+        background: linear-gradient(135deg, #F5E2BD 5.08%, #FFFBF0 22.02%, #FFF9F1 27.41%, #FAF0E1 43.76%, #F5DAB4 54.18%, #EED4B4 67.11%, #F0D4B3 88.96%);
+    }
 }
 img,
 embed,

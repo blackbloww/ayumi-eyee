@@ -190,7 +190,7 @@
                 border: 2px solid #fff;
                 letter-spacing: 0.08em;
                 img{
-                    max-width: 100%;
+                    max-width: .8rem;
                     right: 2rem;
                 }
             }
@@ -296,6 +296,9 @@
     }
     .sec-overwhelming-main .container .content .btn-nomal{
         padding: 2.4rem 0;
+        img{
+            max-width: 1.2rem;
+        }
     }
     .sec-overwhelming-main .container .content .group .item .btn .btn-w{
         padding: 2.4rem 0;
