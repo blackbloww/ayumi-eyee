@@ -1,1 +1,163 @@
 @charset "utf-8";
+
+.footer{
+    margin-top: 12rem;
+    .sec-links{
+        margin-top: 16rem;
+        .container{
+            .content{
+                .list{
+                    margin-top: 2.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.8rem;
+                    .item{
+                        max-width: 20rem;
+                        width: 100%;
+                        img{
+                            border-radius: .8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sec-overwhelming-footer.sec-overwhelming-main{
+        background: url(../images/common/overwhelming-footer-bg.png);
+        background-position: center;
+        background-size: cover;
+        margin-top: 14rem;
+    }   
+
+    .sec-footer{
+        background: #606060;
+        padding: 6rem 0 10rem;
+        .container{
+            max-width: 100rem;
+            .content{
+                font-family: $font-inter;
+                color: #fff;
+                .title{
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                }
+                .list{
+                    font-size: 1.2rem;
+                    font-family: $font-inter;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    gap: 3rem;
+                    margin-top: 5rem;
+                    .item{
+                        display: flex;
+                        flex-direction: column;
+                        gap: .5rem;
+                        .links{
+                            position: relative;
+                            max-width: max-content;
+                            width: 100%;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                height: 1px;
+                                width: 100%;
+                                background: #fff;
+                                transform: scaleX(0);
+                                transition: 0.3s ease;
+                            }
+
+                            &:hover::after {
+                                transform: scaleX(1);
+                            }
+                        }
+                        .grid{
+                            display: grid;
+                            align-items: center;
+                            grid-template-columns: 1rem 1fr;
+                            margin-left: .5rem;
+                            align-items: flex-start;
+                            &.v2{
+                                margin-left: 2rem;
+                            }
+                            span{
+                                width: .4rem;
+                                height: .4rem;
+                                border-radius: 100%;
+                                background: #fff;
+                                display: block;
+                                margin-top: .6rem;
+                            }
+                        }
+
+                        .top{
+                            display: flex;
+                            flex-direction: column;
+                            gap: .5rem;
+                        }
+
+                        .ft{
+                            display: flex;
+                            flex-direction: column;
+                            gap: .5rem;
+                            margin-top: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .footer .sec-links{
+        margin-top: 10rem;
+    }
+    .footer .sec-links .container .content .list{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(30rem, 33rem));
+        gap: 1.8rem;
+        margin-top: 6rem;
+    }
+    .footer .sec-links .container .content .list .item{
+        max-width: 100%;
+    }
+    .footer .sec-overwhelming-footer.sec-overwhelming-main{
+        margin-top: 10rem;
+    }
+    .footer .sec-overwhelming-footer.sec-overwhelming-main .container .content .ft .btn-nomal{
+        max-width: 51rem;
+        margin-top: 4rem;
+    }
+    .sec-overwhelming-main .container .content .group .item .btn{
+        gap: 2rem;
+    }
+    .footer .sec-overwhelming-footer.sec-overwhelming-main{
+        background: url(../images/top/overwhelming-bg-sp-02.png);
+        background-size: cover;
+    }
+    .footer .sec-footer .container .content .list{
+        font-size: 2.6rem;
+        margin-top: 6rem;
+        gap: 6rem;
+    }
+    .footer .sec-footer .container .content .title{
+        font-size: 3.2rem;
+    }
+    .footer .sec-footer .container .content .list .item .grid span{
+        width: .6rem;
+        height: .6rem;
+        margin-top: 1.7rem;
+    }
+    .footer .sec-footer .container .content .list .item .grid{
+        grid-template-columns: 1.5rem 1fr;
+    }
+    .footer .sec-footer{
+        padding: 9rem 1.5rem 7rem;
+    }
+}
